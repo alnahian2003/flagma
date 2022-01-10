@@ -4,3 +4,8 @@
  * Project Name: Flagma
  * Project Type: Country Flags, Country Informations, API Integrations, Intermediate JavaScript Project etc.
  */
+
+// Footer Dynamic Year
+const yearContainer = document.getElementById("year");
+let currentYear = new Date();
+yearContainer.innerText = currentYear.getFullYear();
