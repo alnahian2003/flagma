@@ -29,6 +29,7 @@ function displayFlags() {
     // Create an Img Element for Showing Flags Image
     const flagImg = document.createElement("img");
     flagImg.className = "flag-img";
+    flagImg.alt = countries[i].name;
 
     //convert country code to lowercase to meet the exact filepath name
     let lowr = countries[i].code;
