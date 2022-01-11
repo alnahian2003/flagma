@@ -257,7 +257,7 @@ footer p a {
 
   #flags {
     grid-gap: 3rem;
-    padding: 3rem;
+    padding: 2rem;
     grid-template-columns: repeat(4, 1fr);
   }
 
