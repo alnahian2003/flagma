@@ -7,7 +7,7 @@
 
 /* Primary Variables */
 :root {
-  --primary-color: hsl(0, 100%, 60%);
+  --primary-color: #ff3333;
   --dark-color: hsl(0, 100%, 5%);
 }
 
@@ -36,7 +36,7 @@ img {
 }
 
 #flags-panel::-webkit-scrollbar-thumb {
-  background-color: #303030;
+  background-color: var(--dark-color);
   outline: 0;
   border-radius: 50px;
 }
@@ -163,6 +163,8 @@ main {
   transition: 0.3s;
   cursor: pointer;
   text-align: left;
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
 }
 
 .flag-image {
@@ -202,3 +204,79 @@ main {
   padding: 1rem;
 }
 
+footer p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Responsive Codes */
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  header{
+    font-size: 90%;
+  }
+  main {
+    height: 100vh;
+  }
+}
+
+/* Extra large devices (large desktops, 1500px and up) */
+@media (min-width: 1500px) {
+  header {
+    font-size: 150%;
+  }
+  #topbar {
+    height: 80px;
+  }
+
+  .country-name {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+  }
+  .country-code {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+  }
+
+  #flags {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1920px) {
+  header {
+    font-size: 3rem;
+  }
+
+  #topbar {
+    height: 100px;
+    font-size: 150%;
+    padding: 3rem;
+  }
+
+  #flags {
+    grid-gap: 3rem;
+    padding: 3rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .flag {
+    border-radius: 1rem;
+  }
+
+  .country-name {
+    font-size: 2.5rem;
+    padding: 2rem;
+  }
+  .country-code {
+    font-size: 2rem;
+    padding: 2rem;
+    padding-top: 0;
+  }
+
+  /* Custom Scrollbar */
+  #flags-panel::-webkit-scrollbar {
+    width: 20px !important;
+  }
+}

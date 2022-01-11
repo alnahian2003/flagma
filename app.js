@@ -33,7 +33,7 @@ function displayFlags() {
 
     //convert country code to lowercase to meet the exact filepath name
     let lowr = countries[i].code;
-    flagImg.src = "/flags/" + lowr.toLowerCase() + ".svg";
+    flagImg.src = "./flags/" + lowr.toLowerCase() + ".svg";
     //   Append the Img to the flagDiv
     flagDiv.appendChild(flagImg);
 
