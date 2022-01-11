@@ -13,103 +13,39 @@
     <!-- Main Headlines -->
     <header id="hdr">
       <h1 id="heading">Flagma 🏳</h1>
-      <h2 id="sub-heading">Country Flags For You.</h2>
+      <h2 id="sub-heading">Country Flags With No Hassle!</h2>
     </header>
 
     <!-- Main Section Starts From Here -->
-    <main id="mn">
-      <div id="topbar"></div>
+    <div id="topbar">
+      <h3 id="totalCountries"></h3>
+      <!-- <input
+        type="search"
+        name="search"
+        id="searchInput"
+        placeholder="Search by a Country Name..."
+      /> -->
+    </div>
+    <main id="main">
       <div id="flags-panel">
-        <div class="flags">
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-          <div class="flag">Potaka</div>
-        </div>
+        <div id="flags"></div>
       </div>
     </main>
 
     <!-- Footer -->
-    <footer id="ftr">
-      <p>© <span id="year">2022</span> - Al Nahian (alnahian2003)</p>
+    <footer id="footer">
+      <p>
+        © <span id="year">2022</span> -
+        <a
+          href="https://alnahian2003.github.io"
+          target="_blank"
+          rel="noopener noreferrer"
+          >alnahian2003</a
+        >
+      </p>
     </footer>
     <!-- Main JavaScript Source -->
+    <script src="countries.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
